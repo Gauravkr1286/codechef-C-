@@ -3,25 +3,19 @@ using namespace std;
 
 int main() {
 	// your code goes here
-    int T;
-	cin>> T;
-	
-    while (T--){
-    int X, Y;
-    cin>>X, Y;
-    if (X==Y)
-    {
-        cout<<"ANY"<<endl;
-
-    }
-    else if (X>Y){
-        cout<<"SECOND"<<endl;
-    }
-    else
-    {
-        /* code */
-        cout<<"FIRST"<<endl;
-    }
-}
+	int t ;
+	cin>>t;
+	while(t--)
+	{
+	    int x,y;
+	    cin>>x>>y;
+	    if(x<y)
+	        cout<<"FIRST"<<"\n";
+        else if(x==y)
+            cout<<"ANY"<<"\n";
+        else
+            cout<<"SECOND"<<"\n";
+            
+	}
 	return 0;
 }
